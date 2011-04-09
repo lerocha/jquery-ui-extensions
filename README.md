@@ -38,3 +38,4 @@ Extending datepicker with additional shortcuts like [QuickBooks date control](ht
 	</tr>
 </table>
 
+See demo [here](http://dl.dropbox.com/u/7676834/jquery-ui-extensions/demo/default.html).
