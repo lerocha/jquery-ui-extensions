@@ -59,6 +59,18 @@ $.extend($.datepicker, { customKeyPress: function (event) {
                 $.datepicker._adjustDate(event.target, end - inst.selectedDay, "D");
             }
             break;
+        case "w":
+            // First day of the (w)eek.
+            var date = new Date(inst.selectedYear, inst.selectedMonth, inst.selectedDay);
+            var offset = (date.getDay() > 0 ? date.getDay() : 7);
+            $.datepicker._adjustDate(event.target, -offset, "D");
+            break;
+        case "k":
+            // Last day of the wee(k).
+            var date = new Date(inst.selectedYear, inst.selectedMonth, inst.selectedDay);
+            var offset = (date.getDay() < 6 ? 6 - date.getDay() : 7);
+            $.datepicker._adjustDate(event.target, offset, "D");
+            break;
         case "t":
             // Today (same as Ctrl+Home).
             $.datepicker._gotoToday(event.target);
