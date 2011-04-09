@@ -21,6 +21,14 @@ Extending datepicker with additional shortcuts like [QuickBooks date control](ht
 		<td><b>T</b>oday</td>
 	</tr>
 	<tr>
+		<td>W</td>
+		<td>First day of the <b>W</b>eek</td>
+	</tr>
+	<tr>
+		<td>K</td>
+		<td>Last day of the wee<b>K</b></td>
+	</tr>
+	<tr>
 		<td>M</td>
 		<td>First day of the <b>M</b>onth</td>
 	</tr>
