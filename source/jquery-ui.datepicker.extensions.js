@@ -6,26 +6,6 @@
  *
  */
 
-// Extending jQuery UI Datepicker
-$.extend($.datepicker, { getLastDay: function (month, year) {
-    // month is from 0 to 11.
-    if (month == 1) {
-        if (year % 400 == 0) {
-            return 29;
-        } else if (year % 100 == 0) {
-            return 28;
-        } else if (year % 4 == 0) {
-            return 29;
-        }
-        return 28;
-    } else if (month < 7) {
-        return 31 - (month % 2);
-    } else {
-        return 30 + (month % 2);
-    }
-}
-});
-
 // Extends datepicker with shortcuts for today, begin and end of the year and month.
 $.extend($.datepicker, { customKeyPress: function (event) {
     var inst = $.datepicker._getInst(event.target);
@@ -69,7 +49,7 @@ $.extend($.datepicker, { customKeyPress: function (event) {
             break;
         case "h":
             // Last day of the mont(h).
-            var end = $.datepicker.getLastDay(inst.selectedMonth, inst.selectedYear);
+            var end = $.datepicker._getDaysInMonth(inst.selectedYear, inst.selectedMonth);
             if (inst.selectedDay == end) {
                 $.datepicker._adjustDate(event.target, +1, "M");
             } else {
