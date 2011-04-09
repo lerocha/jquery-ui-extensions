@@ -1,3 +1,7 @@
+This project will contain extensions for jQuery UI for data entry widgets.
+
+See demo [here](http://dl.dropbox.com/u/7676834/jquery-ui-extensions/demo/default.html).
+
 datepicker
 ----------
 
@@ -45,5 +49,3 @@ Extending datepicker with additional shortcuts like [QuickBooks date control](ht
 		<td>Last day of the yea<b>R</b></td>
 	</tr>
 </table>
-
-See demo [here](http://dl.dropbox.com/u/7676834/jquery-ui-extensions/demo/default.html).
