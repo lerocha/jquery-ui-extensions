@@ -1,6 +1,9 @@
-This project will contain extensions for jQuery UI for data entry widgets.
+Project Description
+-------------------
 
-See demo [here](http://dl.dropbox.com/u/7676834/jquery-ui-extensions/demo/default.html).
+This project contains extensions for jQuery UI for data entry widgets.
+
+See demo [here](http://dl.dropbox.com/u/7676834/jquery-ui-extensions/demo/default.html), and extensions description below.
 
 datepicker
 ----------
