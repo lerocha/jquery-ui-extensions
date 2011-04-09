@@ -51,6 +51,9 @@ $.extend($.datepicker, { customKeyPress: function (event) {
             // Last day of the mont(h).
             var end = $.datepicker._getDaysInMonth(inst.selectedYear, inst.selectedMonth);
             if (inst.selectedDay == end) {
+                var month = (inst.selectedMonth + 1) % 11;
+                var year = inst.selectedYear + Math.floor((inst.selectedMonth + 1) / 11);
+                inst.selectedDay = $.datepicker._getDaysInMonth(year, month);
                 $.datepicker._adjustDate(event.target, +1, "M");
             } else {
                 $.datepicker._adjustDate(event.target, end - inst.selectedDay, "D");
