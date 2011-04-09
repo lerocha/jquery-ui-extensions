@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Datepicker - Extended functionality</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../source/jquery-ui.datepicker.extensions.js"></script>
+	<script>
+	$(function() {
+		$("#datepicker").datepicker({ dateFormat: "mm/dd/yy" }).keypress(function (event) { 
+			$.datepicker.customKeyPress(event);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<h2>datepicker</h2>
+
+<div class="demo-description">
+
+<p>Datepicker is extended with additional shortcuts:</p>
+
+<table>
+	<tr>
+		<th>Shortcut</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>+</td>
+		<td>Next Day</td>
+	</tr>
+	<tr>
+		<td>-</td>
+		<td>Previous Day</td>
+	</tr>
+	<tr>
+		<td>T</td>
+		<td><b>T</b>oday</td>
+	</tr>
+	<tr>
+		<td>M</td>
+		<td>First day of the <b>M</b>onth</td>
+	</tr>
+	<tr>
+		<td>H</td>
+		<td>Last day of the mont<b>H</b></td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>First day of the <b>Y</b>ear</td>
+	</tr>
+	<tr>
+		<td>R</td>
+		<td>Last day of the yea<b>R</b></td>
+	</tr>
+</table>
+
+</div><!-- End demo-description -->
+
+<div class="demo">
+
+<p>Date: <input type="text" id="datepicker"></p>
+
+</div><!-- End demo -->
+
+</body>
+</html>
