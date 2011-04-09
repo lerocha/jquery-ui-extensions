@@ -5,10 +5,11 @@
 	<title>jQuery UI Datepicker - Extended functionality</title>
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css" type="text/css" media="all" />
     <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="demo.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../source/jquery-ui.datepicker.extensions.js"></script>
-	<script>
+	<script type="text/javascript">
 	$(function() {
 		$("#datepicker").datepicker({ dateFormat: "mm/dd/yy" }).keypress(function (event) { 
 			$.datepicker.customKeyPress(event);
