@@ -7,8 +7,6 @@ body
 {
     font-size: 75%;
     font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
 }
 
 a:link
@@ -340,4 +338,18 @@ div#title
 .tri-state
 {
     width: 6em;
+}
+
+.demo
+{
+    float:left; 
+    clear: none;
+    width: 300px;
+    padding: 10px;
+}
+
+.demo-description
+{
+    left: 310px;
+    padding: 10px;
 }
